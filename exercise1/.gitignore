@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+pylintrc
+.pylintrc
+
+venv/
+.env
+.vscode/
+
+Pulumi.*.yaml
+.pulumi/
+
+.DS_Store 

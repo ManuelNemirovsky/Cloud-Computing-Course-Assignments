@@ -1,0 +1,6 @@
+name: parking-lot-management
+runtime:
+  name: python
+  options:
+    virtualenv: venv
+description: A parking lot management system using AWS Lambda and API Gateway 

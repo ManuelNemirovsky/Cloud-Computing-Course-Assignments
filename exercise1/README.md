@@ -2,7 +2,8 @@
 
 | Student Name | Student ID |
 |-------------|------------|
-| Manuel Nemirovsky | 123456789 |
+| Manuel Nemirovsky | 211338108 |
+| Gilad Amir | 211338108 |
 
 # Parking Lot Management System
 
@@ -60,14 +61,14 @@ The system is built using:
 
 1. **Clone the Repository**
    ```bash
-   git clone <repository-url>
-   cd management_system_parking_lot
+   git clone https://github.com/ManuelNemirovsky/Cloud-Computing-Course-Assignments
+   cd exercise1
    ```
 
 2. **Create Virtual Environment**
    ```bash
    python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   source venv/bin/activate
    ```
 
 3. **Install Dependencies**
@@ -95,15 +96,15 @@ The system is built using:
    pulumi up
    ```
    This will create:
-   - DynamoDB table
-   - Lambda functions
-   - API Gateway endpoints
-   - IAM roles and policies
+   - `DynamoDB` table
+   - `Lambda` functions
+   - `API Gateway` endpoints
+   - `IAM roles` and `policies`
 
 2. **Environment Variables**
    After deployment, set the following environment variables:
-   - `DYNAMODB_TABLE_NAME`: Name of the DynamoDB table
-   - `AWS_REGION`: AWS region where resources are deployed
+   - `DYNAMODB_TABLE_NAME`: Name of the DynamoDB table (self generated with suffix)
+   - `AWS_REGION`: AWS region where resources are deployed (self generated with suffix)
 
 ## API Endpoints
 
@@ -146,6 +147,5 @@ The system returns appropriate HTTP status codes and error messages:
 
 ## Monitoring Tools We Used
 
-- CloudWatch Logs for Lambda functions
-- DynamoDB metrics for database performance
-- API Gateway metrics for endpoint usage
+- `CloudWatch` Logs for Lambda functions
+- `API Gateway` metrics for endpoint usage

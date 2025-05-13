@@ -3,7 +3,7 @@
 | Student Name | Student ID |
 |-------------|------------|
 | Manuel Nemirovsky | 211338108 |
-| Gilad Amir | 211338108 |
+| Gilad Amir | 208614883 |
 
 # Parking Lot Management System
 
@@ -23,6 +23,35 @@ A serverless parking lot management system built with AWS Lambda, API Gateway, a
 - Automated parking fee calculation ($10 per hour, rounded up to nearest 15 minutes)
 - Prevention of ticket reuse
 - Real-time parking lot status updates
+
+#### API Response Examples
+
+##### Valid Entry Response
+When a vehicle successfully enters the parking lot, the API returns a ticket ID and success message:
+```
+{
+    "ticketId": "3936777a-1938-4f4a-ae15-3ae95bfd9cad",
+    "message": "Entry recorded successfully"
+}
+```
+
+<img width="1407" alt="Screen Shot 2025-05-13 at 23 32 22" src="https://github.com/user-attachments/assets/26f56274-83b4-42be-859d-bf28d3415a07" />
+*Figure 1: Example of a successful vehicle entry response*
+
+##### Valid Exit Response
+When a vehicle successfully exits the parking lot, the API returns the parking duration and fee:
+```
+{
+    "licensePlate: "123-123-555",
+    "parkedTime: 0.25,
+    "parkingLot": "13",
+    "charge": 2.5
+}
+```
+
+<img width="1407" alt="Screen Shot 2025-05-13 at 23 37 22" src="https://github.com/user-attachments/assets/bb7aa410-222f-4fee-bfce-5e9304da016e" />
+*Figure 2: Example of a successful vehicle exit response*
+
 
 ### Security & Validation
 - Input validation for all operations

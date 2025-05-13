@@ -1,4 +1,4 @@
-# Cloud Computing Course Assignments
+# Cloud Computing Course Assignments | Reichman University (#3031)
 
 This repository contains the assignments and exercises completed during `Cloud Computing course`
 
